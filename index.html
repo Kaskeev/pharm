@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__navbar">
+                <div class="header__top-nav">
+                    <div class="header__logo">
+                       <a href="#"><img src="images/logo.png" alt="LOGO" class="logo__img"></a>
+                    </div>
+                    <div class="header__select-сity">
+                        <a href="javascript:PopUpShow()" class="city__popup-link">
+                            <p class="header__name-сity">Владивосток</p>
+                            <div class="header__city-img">
+                              <img src="images/dropdown.svg" alt="">
+                            </div> 
+                        </a>
+                       
+                    </div>
+                    <div class="header__nav-menu">
+                        <ul class="header__menu-list">
+                            <li>
+                                <a href="#">Адреса аптек </a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Акции</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__pooк-vision">
+                        <span>Версия для слабовидящих</span>
+                        <img src="images/poor__vision.png" alt="" srcset="">
+                    </div>
+                    <div class="header__contact-number">
+                        <a href="#" class="header__number-link">8 800 707 77 33</a>
+                    </div>
+                </div>
+                <div class="header__bottom-nav">
+                    <button class="header__catalog">
+                        <img src="images/catalog.svg" alt="" srcset="" class="svg__catalog">
+                        <p class="header__catalog-text">Каталог товаров</p>
+                    </button>
+                    <div class="header__input-block">
+                        <input class="header__input" type="text" placeholder="Средство,  действующее вещество, проблема">
+                        <div class="header__search-block">
+                            <img src="images/search.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="header__profile">
+                        <div class="header__user-img">
+                            <img src="images/user.png" alt="">
+                        </div>
+                        <div class="header__user">
+                            <p class="header__user-name">
+                                Константин
+                            </p>
+                            <p class="header__user-profile">
+                                Ваш профиль
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header__fav-block">
+                        <img src="images/fav.svg" alt="" srcset="">
+                    </div>
+                    <div class="header__basket">
+                        <img src="images/trash.png" alt="" class="basket__full">
+                        <div class="basket__circle">
+                            <p class="basket__num">
+                                13
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="city__popup" id="popup1">
+        <a href="javascript:PopUpHide()" class="close__link">
+        <img src="images/close.svg" alt="CLOSE" class="popup__close-city">
+    </a>
+        <p class="info__popup">
+            Информация о доставке будет 
+            отображаться для региона:
+        </p>
+        <p class="city__name">
+            Владивосток
+        </p>
+        <div class="select__popup">
+        <button class="select__city-yes">
+            Да, выбрать
+        </button>
+    </div>
+        <a href="#popup2" class="select__city-no">
+            Нет, выбрать другой город
+        </a>
+</div>
+
+<div class="popup" id="popup2">
+<div class="popup__choose-city" >
+    <a href="#header" class="popup__area"></a>
+    <div class="popup__content">
+    <a href="#" class="close__link">
+        <img src="images/close.svg" alt="CLOSE" class="popup__close-city popup__close">
+        </a>
+    <h2 class="choose__city-title">
+        Выберите город
+    </h2>
+    <div class="choose__cities">
+        <div class="cities__block">
+        <div class="cities__number">
+            <h4 class="city__title city__bold">Владивосток</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Де-Фриз</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Арсеньев</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Артем</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Большой Камень</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Вольно-Надеждинское</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Врангель</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+    </div>
+    <div class="cities__block">
+        <div class="cities__number">
+            <h4 class="city__title">Дальнегорск</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Находка</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Сибирцево</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Славянка</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Спасск-Дальний</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title">Уссурийск</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+    </div>
+        <div class="cities__block">
+            <div class="cities__number">
+            <h4 class="city__title city__bold">Москва</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title city__bold">Новосибирск</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        <div class="cities__number">
+            <h4 class="city__title city__bold">Хабаровск</h4>
+            <p class="number__pharm">
+                12 аптек 
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
