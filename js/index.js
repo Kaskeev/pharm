@@ -9,6 +9,7 @@ function PopUpHide(){
 };
 $(document).ready(function(){
     $(".header__burger").click(function(event){
-        $(".header__burger, .header__top-nav").toggleClass('active');
+        $(".header__burger, .header__navbar").toggleClass('active');
+        $('body').toggleClass('lock');
     });
 });
